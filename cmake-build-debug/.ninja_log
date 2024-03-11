@@ -1,0 +1,25 @@
+# ninja log v5
+6	1920	7318613669579333	CMakeFiles/Assignments.dir/Assignment1/inlämning1d.cpp.obj	6c85476fdd299777
+1	453	7318613904944684	build.ninja	75fb04dc3347156b
+0	2070	7314324006805523	CMakeFiles/Assignments.dir/Assignment1/inlämning1b.cpp.obj	e8454bc632db2be3
+1920	2099	7318613671339520	Assignments.exe	f8095f9dd03a985c
+4	1379	7314373540116325	CMakeFiles/Assignments.dir/Assignment1/inlämning1c.cpp.obj	723ae3f00c96ecdd
+6	699	7318540319167490	CMakeFiles/Assignments.dir/Assignment1/inlämning1vg.cpp.obj	3abbbbca5133c074
+5	2586	7315187614717414	CMakeFiles/Assignments.dir/testtenta.cpp.obj	105fbaf94e485433
+1	433	7318613904944684	build.ninja	75fb04dc3347156b
+4	705	7318613913184861	CMakeFiles/Assignments.dir/Assignment1/inlämning1vg.cpp.obj	3abbbbca5133c074
+706	846	7318613914574668	Assignments.exe	5dfe50f273f1ff8
+5	716	7318614248091648	CMakeFiles/Assignments.dir/Assignment1/inlämning1vg.cpp.obj	3abbbbca5133c074
+716	859	7318614249481628	Assignments.exe	5dfe50f273f1ff8
+5	746	7318614763882583	CMakeFiles/Assignments.dir/Assignment1/inlämning1vg.cpp.obj	3abbbbca5133c074
+746	890	7318614765272827	Assignments.exe	5dfe50f273f1ff8
+10	1003	7318616106515460	CMakeFiles/Assignments.dir/Assignment1/inlämning1vg.cpp.obj	3abbbbca5133c074
+1003	1153	7318616108005499	Assignments.exe	5dfe50f273f1ff8
+4	735	7318616785644698	CMakeFiles/Assignments.dir/Assignment1/inlämning1vg.cpp.obj	3abbbbca5133c074
+735	902	7318616787274501	Assignments.exe	5dfe50f273f1ff8
+4	819	7318617106736680	CMakeFiles/Assignments.dir/Assignment1/inlämning1vg.cpp.obj	3abbbbca5133c074
+819	967	7318617108186655	Assignments.exe	5dfe50f273f1ff8
+4	709	7318618037450520	CMakeFiles/Assignments.dir/Assignment1/inlämning1vg.cpp.obj	3abbbbca5133c074
+709	855	7318618038860525	Assignments.exe	5dfe50f273f1ff8
+4	685	7318618362298195	CMakeFiles/Assignments.dir/Assignment1/inlämning1vg.cpp.obj	3abbbbca5133c074
+685	832	7318618363728392	Assignments.exe	5dfe50f273f1ff8
