@@ -13,7 +13,7 @@ add_executable(
 
 #        Assignment2/inlämning2.cpp
 #        testtenta1.cpp
-        tentaA.cpp
+        Tentamen/tentaA.cpp
 #        tentaB.cpp
         #        testtenta2.cpp
 #        lambda_example.cpp
