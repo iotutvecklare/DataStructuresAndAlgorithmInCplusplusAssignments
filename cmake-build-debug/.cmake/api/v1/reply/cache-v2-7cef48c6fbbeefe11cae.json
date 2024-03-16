@@ -723,7 +723,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/velor/AppData/Local/JETBRA~1/CLION2~2.1/bin/ninja/win/x64/ninja.exe"
+			"value" : "C:/Users/velor/AppData/Local/JetBrains/CLion 2023.2.1/bin/ninja/win/x64/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",

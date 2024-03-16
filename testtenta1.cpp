@@ -156,6 +156,7 @@ int main(){
     int desktopsWithCorei9 = std::count_if(computers.begin(), computers.end(), [](Computer c) {
         return c.getType() == Desktop && c.getCpu() == "Core i9-11900K";
     });
+
     std::cout << "Number of Desktop computers with Core i9-11900K: " << desktopsWithCorei9 << std::endl;
 
     //5.  Sortera så att det är i descending  LÄNGD-ordning för  ComputerCPUTypes

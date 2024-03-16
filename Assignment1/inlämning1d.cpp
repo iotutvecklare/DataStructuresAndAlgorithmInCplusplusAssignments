@@ -5,7 +5,9 @@
 
 // Function to sort a vector of integers and measure the time taken
 void sortAndMeasureTime(std::vector<int>& numbers) {
-    // Measure start time
+    // This clock provides the highest resolution clock available on the system.
+    // It might be implemented using a high-resolution timer or a hardware counter.
+    // The resolution of this clock is generally higher than 'std::chrono::steady_clock'.
     auto start = std::chrono::high_resolution_clock::now();
 
     // Sort the vector using std::sort
