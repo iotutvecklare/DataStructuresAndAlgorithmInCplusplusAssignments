@@ -80,6 +80,14 @@ public:
         capacity = _capacity;
     }
 
+    // Function to print the contents of the cache
+    void printCache() const {
+        std::cout << "Cache contents:" << std::endl;
+        for (const auto& player : cache) {
+            std::cout << "Player ID: " << player.id << ", Name: " << player.name << ", Jersey: " << player.jersey << ", Team: " << player.teamName << std::endl;
+        }
+    }
+
     HockeyPlayer* getPlayer(int id) {
         auto it = cacheMap.find(id);
         if (it == cacheMap.end()) {
@@ -90,8 +98,8 @@ public:
 
                 // If cache size exceeds capacity, remove the least recently used player
                 if (cache.size() > capacity) {
-                    cacheMap.erase(cache.back().id);
-                    //cache.pop_back();
+                    //cacheMap.erase(cache.back().id);
+                    cache.pop_back();
                 }
                 return hockeyPlayer;
             } else {
@@ -106,8 +114,8 @@ public:
 
             // If cache size exceeds capacity, remove the least recently used player
             if (cache.size() > capacity) {
-                cacheMap.erase(cache.back().id);
-                //cache.pop_back();
+                //cacheMap.erase(cache.back().id);
+                cache.pop_back();
             }
 
             // Return the pointer to the accessed player
@@ -121,13 +129,48 @@ int main() {
 //    IOStream writer("hockey_players.txt"); // Just for generating 10000 players in the file
 //    writer.writeToFile(); // Just for generating 10000 players in the file
 
-    LRUCache cache(15);
-    int id = 80;
-    HockeyPlayer* player = cache.getPlayer(id);
-    if (player) {
-        player->printPlayer();
-    } else {
-        std::cout << "Player's with ID " << id << " not found." << std::endl;
+    LRUCache cache(2);
+    while (true) {
+        std::cout << "Menu:" << std::endl;
+        std::cout << "1. Get player information" << std::endl;
+        std::cout << "2. View cache contents" << std::endl;
+        std::cout << "3. Exit" << std::endl;
+        std::cout << "Enter your choice: ";
+
+        int choice;
+        std::cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                // Get player information
+                int id;
+                std::cout << "Enter player ID: ";
+                std::cin >> id;
+
+                // Get player information from cache
+                HockeyPlayer* player = cache.getPlayer(id);
+                if (player) {
+                    std::cout << "Player information:" << std::endl;
+                    player->printPlayer(); // Assuming printPlayer() function prints player information
+                } else {
+                    std::cout << "Player with ID " << id << " not found." << std::endl;
+                }
+                break;
+            }
+            case 2: {
+                // View cache contents
+                std::cout << "Cache contents:" << std::endl;
+                cache.printCache(); // Assuming viewCacheContents() function prints cache contents
+                break;
+            }
+            case 3: {
+                // Exit program
+                std::cout << "Exiting program." << std::endl;
+                return 0;
+            }
+            default:
+                std::cout << "Invalid choice. Please enter a valid option." << std::endl;
+        }
     }
     return 0;
 }
