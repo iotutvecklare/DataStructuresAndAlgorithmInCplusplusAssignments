@@ -67,13 +67,20 @@ int main() {
         int choice;
         std::cin >> choice;
 
-        // Clear input buffer
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+// Check if input failed or choice is not within range
+        if (std::cin.fail() || choice < 1 || choice > 2) {
+            std::cout << "Invalid choice. Please try again." << std::endl;
+            std::cin.clear(); // Clear the fail state
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear input buffer
+            continue; // Go back to the beginning of the loop
+        }
 
+        // If choice is valid, proceed with the switch statement
         switch (choice) {
             case 1: {
                 std::string name;
                 std::cout << "Enter the customer's name: ";
+                std::cin.ignore(); // Ignore the newline character left in the input buffer
                 std::getline(std::cin, name); // Use getline to read the entire line including spaces
                 static int queueNumber = 1;
                 clinic.addCustomer(Customer<std::string>(queueNumber++, name));
@@ -82,9 +89,8 @@ int main() {
             case 2:
                 clinic.callNextCustomer();
                 break;
-            default:
-                std::cout << "Invalid choice. Please try again." << std::endl;
         }
+
     }
 
     return 0;
