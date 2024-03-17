@@ -142,12 +142,11 @@ int main() {
 
         switch (choice) {
             case 1: {
-                // Get player information
+    
                 int id;
                 std::cout << "Enter player ID: ";
                 std::cin >> id;
 
-                // Get player information from cache
                 HockeyPlayer* player = cache.getPlayer(id);
                 if (player) {
                     std::cout << "Player information:" << std::endl;
@@ -158,13 +157,11 @@ int main() {
                 break;
             }
             case 2: {
-                // View cache contents
                 std::cout << "Cache contents:" << std::endl;
                 cache.printCache();
                 break;
             }
             case 3: {
-                // Exit program
                 std::cout << "Exiting program." << std::endl;
                 return 0;
             }
