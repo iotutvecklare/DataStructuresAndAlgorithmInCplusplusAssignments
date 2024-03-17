@@ -10,12 +10,14 @@ add_executable(
 #        Assignment1/inlämning1c.cpp
 #        Assignment1/inlämning1d.cpp
 #        Assignment1/inlämning1vg.cpp
-
 #        Assignment2/inlämning2.cpp
+        Assignment2/inlämning2vg.cpp
+
+
 #        testtenta1.cpp
-        Tentamen/tentaA.cpp
+#        Tentamen/tentaA.cpp
 #        tentaB.cpp
         #        testtenta2.cpp
 #        lambda_example.cpp
-        #        Assignment2/inlämning2vg.cpp
+
 )
