@@ -151,7 +151,7 @@ int main() {
                 HockeyPlayer* player = cache.getPlayer(id);
                 if (player) {
                     std::cout << "Player information:" << std::endl;
-                    player->printPlayer(); // Assuming printPlayer() function prints player information
+                    player->printPlayer();
                 } else {
                     std::cout << "Player with ID " << id << " not found." << std::endl;
                 }
@@ -160,7 +160,7 @@ int main() {
             case 2: {
                 // View cache contents
                 std::cout << "Cache contents:" << std::endl;
-                cache.printCache(); // Assuming viewCacheContents() function prints cache contents
+                cache.printCache();
                 break;
             }
             case 3: {
