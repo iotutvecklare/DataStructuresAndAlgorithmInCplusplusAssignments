@@ -49,8 +49,8 @@ cmake_ninja_workdir = D$:/FromDrive-D/Inbyggda-Sytem-2023/DatastrukturOchAlgorit
 
 build cmake_object_order_depends_target_Assignments: phony || CMakeFiles/Assignments.dir
 
-build CMakeFiles/Assignments.dir/Assignment2/inlämning2vg.cpp.obj: CXX_COMPILER__Assignments_unscanned_Debug D$:/FromDrive-D/Inbyggda-Sytem-2023/DatastrukturOchAlgoritmer/Assignments/Assignment2/inlämning2vg.cpp || cmake_object_order_depends_target_Assignments
-  DEP_FILE = CMakeFiles\Assignments.dir\Assignment2\inlämning2vg.cpp.obj.d
+build CMakeFiles/Assignments.dir/Assignment2/inlämning2.cpp.obj: CXX_COMPILER__Assignments_unscanned_Debug D$:/FromDrive-D/Inbyggda-Sytem-2023/DatastrukturOchAlgoritmer/Assignments/Assignment2/inlämning2.cpp || cmake_object_order_depends_target_Assignments
+  DEP_FILE = CMakeFiles\Assignments.dir\Assignment2\inlämning2.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Assignments.dir
   OBJECT_FILE_DIR = CMakeFiles\Assignments.dir\Assignment2
@@ -63,7 +63,7 @@ build CMakeFiles/Assignments.dir/Assignment2/inlämning2vg.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable Assignments.exe
 
-build Assignments.exe: CXX_EXECUTABLE_LINKER__Assignments_Debug CMakeFiles/Assignments.dir/Assignment2/inlämning2vg.cpp.obj
+build Assignments.exe: CXX_EXECUTABLE_LINKER__Assignments_Debug CMakeFiles/Assignments.dir/Assignment2/inlämning2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Assignments.dir

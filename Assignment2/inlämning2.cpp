@@ -67,11 +67,14 @@ int main() {
         int choice;
         std::cin >> choice;
 
+        // Clear input buffer
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
         switch (choice) {
             case 1: {
                 std::string name;
                 std::cout << "Enter the customer's name: ";
-                std::cin >> name;
+                std::getline(std::cin, name); // Use getline to read the entire line including spaces
                 static int queueNumber = 1;
                 clinic.addCustomer(Customer<std::string>(queueNumber++, name));
                 break;
@@ -86,3 +89,4 @@ int main() {
 
     return 0;
 }
+

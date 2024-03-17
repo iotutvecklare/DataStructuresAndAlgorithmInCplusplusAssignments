@@ -5,7 +5,6 @@ The hash table allows fast lookup of cached items by key, while the linked list 
 This combination enables constant-time access to cached items and efficient removal and reinsertion of items based on their access patterns.
 */
 
-
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -120,10 +119,10 @@ public:
 
 int main() {
 //    IOStream writer("hockey_players.txt"); // Just for generating 10000 players in the file
-//    writer.writeToFile();
+//    writer.writeToFile(); // Just for generating 10000 players in the file
 
-    LRUCache cache(10);
-    int id = 900002;
+    LRUCache cache(15);
+    int id = 80;
     HockeyPlayer* player = cache.getPlayer(id);
     if (player) {
         player->printPlayer();
