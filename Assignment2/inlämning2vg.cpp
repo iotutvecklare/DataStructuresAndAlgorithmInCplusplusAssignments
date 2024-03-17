@@ -23,13 +23,6 @@ struct HockeyPlayer {
 
     HockeyPlayer(int _id, std::string  _name, int _jersey, std::string  _teamName)
             : id(_id), name(std::move(_name)), jersey(_jersey), teamName(std::move(_teamName)) {}
-
-    void printPlayer() {
-        std::cout << "Player's id: " << id << std::endl;
-        std::cout << "Player's name: " << name  << std::endl;
-        std::cout << "Player's jersey: " << jersey  << std::endl;
-        std::cout << "Player's team: " << teamName  << std::endl;
-    }
 };
 
 
@@ -142,7 +135,6 @@ int main() {
 
         switch (choice) {
             case 1: {
-    
                 int id;
                 std::cout << "Enter player ID: ";
                 std::cin >> id;
@@ -150,7 +142,10 @@ int main() {
                 HockeyPlayer* player = cache.getPlayer(id);
                 if (player) {
                     std::cout << "Player information:" << std::endl;
-                    player->printPlayer();
+                    std::cout << "ID: " << player->id << std::endl;
+                    std::cout << "Name: " << player->name << std::endl;
+                    std::cout << "Jersey: " << player->jersey << std::endl;
+                    std::cout << "Team: " << player->teamName << std::endl;
                 } else {
                     std::cout << "Player with ID " << id << " not found." << std::endl;
                 }
@@ -159,7 +154,6 @@ int main() {
             case 2: {
                 std::cout << "Cache contents:" << std::endl;
                 cache.printCache();
-                break;
             }
             case 3: {
                 std::cout << "Exiting program." << std::endl;
