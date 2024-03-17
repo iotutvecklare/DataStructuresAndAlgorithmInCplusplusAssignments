@@ -27,8 +27,8 @@ struct HockeyPlayer {
     void printPlayer() {
         std::cout << "Player's id: " << id << std::endl;
         std::cout << "Player's name: " << name  << std::endl;
-        std::cout << "Players jersey: " << jersey  << std::endl;
-        std::cout << "Players team: " << teamName  << std::endl;
+        std::cout << "Player's jersey: " << jersey  << std::endl;
+        std::cout << "Player's team: " << teamName  << std::endl;
     }
 };
 

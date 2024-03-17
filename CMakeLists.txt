@@ -10,8 +10,8 @@ add_executable(
 #        Assignment1/inlämning1c.cpp
 #        Assignment1/inlämning1d.cpp
 #        Assignment1/inlämning1vg.cpp
-        Assignment2/inlämning2.cpp
-#        Assignment2/inlämning2vg.cpp
+#        Assignment2/inlämning2.cpp
+        Assignment2/inlämning2vg.cpp
 
 
 #        testtenta1.cpp
